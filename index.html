@@ -214,10 +214,21 @@
     <h2>Contact</h2>
     <div class="divider"></div>
     <div class="card">
-      Email: jmaddila@aum.edu<br>
-      Phone: +1 334-220-6946
-    </div>
+  Email: <a href="mailto:jmaddila@aum.edu">jmaddila@aum.edu</a><br>
+  Phone: <a href="tel:+13342206946">+1 334-220-6946</a>
+</div>
+
   </section>
+
+<script>
+  // Always reset to top when page loads
+  window.onload = function() {
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
+    }
+    window.scrollTo(0, 0);
+  };
+</script>
 
 </body>
 </html>
