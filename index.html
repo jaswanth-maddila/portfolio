@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaswant Maddila | Network Security Portfolio</title>
+  <title>Jaswanth Maddila | Network Security Portfolio</title>
 
   <style>
     body {
@@ -130,6 +130,11 @@
       color: white;
     }
 
+    .plain-link {
+      color: #d8e4ee;
+      text-decoration: none;
+    }
+
     html {
       scroll-behavior: smooth;
     }
@@ -139,7 +144,7 @@
 
   <!-- NAVBAR -->
   <nav>
-    <div style="font-size: 22px; font-weight: 700;">Jaswant Maddila</div>
+    <div style="font-size: 22px; font-weight: 700;">Jaswanth Maddila</div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -152,11 +157,11 @@
   <!-- HERO SECTION -->
   <section id="home" class="hero">
     <div class="hero-text">
-      <p>Hello, I'm Jaswant</p>
+      <p>Hello, I'm Jaswanth</p>
       <h1>Network Security<br>Engineer</h1>
       <a href="#contact" class="contact-btn">Contact Me</a>
     </div>
-    <img src="https://jaswanth-maddila.github.io/portfolio/me.jpg" alt="Jaswant's profile photo" width="300">
+    <img src="https://jaswanth-maddila.github.io/portfolio/me.jpg" alt="Jaswanth's profile photo" width="300">
   </section>
 
   <!-- ABOUT SECTION -->
@@ -214,22 +219,21 @@
     <h2>Contact</h2>
     <div class="divider"></div>
     <div class="card">
-  Email: <a href="mailto:jmaddila@aum.edu">jmaddila@aum.edu</a><br>
-  Phone: <a href="tel:+13342206946">+1 334-220-6946</a>
-</div>
-
+      Email: <a href="mailto:jmaddila@aum.edu" class="plain-link">jmaddila@aum.edu</a><br>
+      Phone: <a href="tel:+13342206946" class="plain-link">+1 334-220-6946</a>
+    </div>
   </section>
 
-<script>
-  // Always reset to top when page loads
-  window.onload = function() {
-    if (window.location.hash) {
-      history.replaceState(null, null, window.location.pathname);
-    }
-    window.scrollTo(0, 0);
-  };
-</script>
-
+  <script>
+    // Always reset to top when page loads
+    window.onload = function() {
+      if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname);
+      }
+      window.scrollTo(0, 0);
+    };
+  </script>
 </body>
 </html>
+
 
