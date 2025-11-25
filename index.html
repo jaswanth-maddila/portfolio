@@ -6,113 +6,215 @@
 <title>Jaswanth Maddila | Network Security Portfolio</title>
 
 <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; }
-    section { padding: 30px 20px; max-width: 900px; margin: auto; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 8px; }
-    .card {
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        margin: 15px 0;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    body {
+        margin: 0;
+        background: #0f0f0f;
+        font-family: "Poppins", Arial, sans-serif;
+        color: #c9d6e0;
     }
-    ul { margin: 10px 0 0 20px; }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 70px;
+        align-items: center;
+        background: #111;
+        color: white;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+    }
+
+    nav li {
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 70px;
+        background: #1a1a1a;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+        font-weight: 800;
+        margin: 0;
+        color: #b4c8da;
+        line-height: 1.1;
+    }
+
+    .hero-text p {
+        margin-top: 15px;
+        font-size: 18px;
+        opacity: 0.8;
+    }
+
+    .contact-btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 25px;
+        background: white;
+        color: black;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .hero img {
+        width: 350px;
+        border-radius: 25px;
+        border: 2px solid #2b2b2b;
+    }
+
+    /* SECTION WRAPPER */
+    section {
+        padding: 70px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #b4c8da;
+    }
+
+    .divider {
+        width: 100%;
+        height: 2px;
+        background: #2a2a2a;
+        margin: 15px 0 40px;
+    }
+
+    .card {
+        background: #1d1d1d;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        line-height: 1.7;
+        color: #d8e4ee;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin-top: 25px;
+    }
+
+    .skill-box {
+        background: #222;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .skill-box h3 {
+        margin: 0;
+        color: white;
+    }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Jaswanth Maddila</h1>
-    <p>Network Security Engineer | Palo Alto | Packet Analysis | TCP/IP</p>
-</header>
+<!-- NAVBAR -->
+<nav>
+    <div style="font-size: 22px; font-weight: 700;">Jaswanth</div>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>Experience</li>
+        <li>Contact</li>
+    </ul>
+</nav>
 
+<!-- HERO SECTION -->
+<div class="hero">
+    <div class="hero-text">
+        <p>Hello, I'm Jaswanth</p>
+        <h1>Network Security<br>Engineer</h1>
+        <a href="#contact" class="contact-btn">Contact Me</a>
+    </div>
+
+    <img src="/mnt/data/a807107e-e0fc-43d6-a73b-f792e10f23a0.png" alt="Profile Photo">
+</div>
+
+<!-- ABOUT SECTION -->
 <section>
-    <h2>About Me</h2>
+    <h2>About</h2>
+    <div class="divider"></div>
+
     <div class="card">
-        <p>I am a Network Security Engineer with hands-on experience in Palo Alto firewalls, 
-        network troubleshooting, packet analysis, and routing fundamentals. 
-        I have worked with firewall models like PA-200, PA-220, PA-500, and 3000/5000 series, 
-        and gained strong customer-facing and technical documentation skills through roles at Movate and CSS Corp.</p>
+        I am a Network Security Engineer skilled in Palo Alto firewalls, packet analysis,
+        routing fundamentals, and troubleshooting. My experience includes working with PA-200,
+        PA-220, PA-500, and 3000/5000 series firewalls, plus customer-facing support roles at
+        Movate and CSS Corp.
     </div>
 </section>
 
+<!-- SKILLS SECTION -->
 <section>
     <h2>Skills</h2>
-    <div class="card">
-        <strong>Networking</strong>
-        <ul>
-            <li>OSI Model, TCP/IP, DNS, DHCP</li>
-            <li>Routing & Switching Fundamentals</li>
-        </ul>
+    <div class="divider"></div>
 
-        <strong>Security</strong>
-        <ul>
-            <li>Palo Alto Firewalls (Physical & Virtual)</li>
-            <li>Panorama, NAT, VPN IPSec, SSL</li>
-            <li>Threat Analysis & Troubleshooting</li>
-        </ul>
-
-        <strong>Tools</strong>
-        <ul>
-            <li>Wireshark</li>
-            <li>Salesforce</li>
-            <li>Jira</li>
-            <li>Confluence</li>
-        </ul>
+    <div class="skills-grid">
+        <div class="skill-box">
+            <h3>Networking</h3>
+            <p>OSI / TCP-IP / DNS / DHCP<br>Routing & Switching</p>
+        </div>
+        <div class="skill-box">
+            <h3>Security</h3>
+            <p>Palo Alto • Panorama • NAT<br>IPSec • SSL • Threat Analysis</p>
+        </div>
+        <div class="skill-box">
+            <h3>Tools</h3>
+            <p>Wireshark • Jira • Confluence<br>Salesforce</p>
+        </div>
     </div>
 </section>
 
+<!-- EXPERIENCE SECTION -->
 <section>
     <h2>Experience</h2>
+    <div class="divider"></div>
 
     <div class="card">
-        <h3>Network Security Engineer — Movate Technologies</h3>
-        <ul>
-            <li>Troubleshot network issues on Palo Alto firewalls.</li>
-            <li>Configured and tested firewall models PA-200/220/500/3000/5000.</li>
-            <li>Provided customer updates and root cause analysis.</li>
-            <li>Maintained case records in Salesforce.</li>
-        </ul>
+        <h3>Network Security Engineer — Movate</h3>
+        Troubleshooting, firewall config, RCA reports, Salesforce documentation.
     </div>
 
     <div class="card">
         <h3>Network Security Intern — CSS Corp</h3>
-        <ul>
-            <li>Learned routing, switching, and firewall configuration.</li>
-            <li>Analyzed network logs using Palo Alto devices and Panorama.</li>
-            <li>Supported issue replication in test labs.</li>
-        </ul>
+        Routing, switching, lab replication, firewall log analysis.
     </div>
 
     <div class="card">
         <h3>Computer Lab Assistant — NSRIT</h3>
-        <ul>
-            <li>Assisted students with system issues and printer troubleshooting.</li>
-            <li>Maintained lab environment and updated systems.</li>
-        </ul>
-    </div>
-
-</section>
-
-<section>
-    <h2>Projects</h2>
-    <div class="card">
-        <p><strong>Coming Soon:</strong> Packet Capture & Traffic Analysis (Wireshark)</p>
-        <p><strong>Coming Soon:</strong> Palo Alto Firewall Rule Configuration Lab</p>
-        <p><strong>Coming Soon:</strong> Network Attack Detection Using Logs</p>
-        <p><strong>Coming Soon:</strong> Basic Virtual Network Setup (pfSense)</p>
+        Printer issues, system updates, student support.
     </div>
 </section>
 
-<section>
+<!-- CONTACT -->
+<section id="contact">
     <h2>Contact</h2>
+    <div class="divider"></div>
+
     <div class="card">
-        <p>Email: jmaddila@aum.edu</p>
-        <p>Phone: +1 334-220-6946</p>
+        Email: jmaddila@aum.edu<br>
+        Phone: +1 334-220-6946
     </div>
 </section>
 
 </body>
 </html>
+
